@@ -26,6 +26,8 @@
     <%= f.collection_select(:category_id, Category.all, :id, :name, {:prompt => "Choose a Category"}) %>
   </div>
 
+  <h4><%= link_to "Add a new category", new_category_path %></h4>
+
   <div class="actions">
     <%= f.submit %>
   </div>
