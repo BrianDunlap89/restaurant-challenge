@@ -2,23 +2,30 @@
 
 <h1>Dishes</h1>
 
-<div class="main-container">
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Category</th>
+      <th colspan="4"></th>
+    </tr>
+  </thead>
 
-  <div class="dish-items">
-    <table>
-      <tbody>
-        <% @dishes.each do |dish| %>
-          <tr>
-            <td class="dish-name"><%= link_to dish.name, dish_path(dish) %></td>
-            <td class="dish-price"><%= dish.price %></td>
-          </tr>
-        <% end %>
-      </tbody>
-    </table>
-  </div>
+  <tbody>
+    <% @dishes.each do |dish| %>
+      <tr>
+        <td><%= dish.name %></td>
+        <td><%= dish.price %></td>
+        <td><%= dish.category.name %></td>
+        <td><%= link_to 'Show', dish %></td>
+        <td><%= link_to 'Edit', edit_dish_path(dish) %></td>
+        <td><%= link_to 'Destroy', dish, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
 
-  <div class="return-nav">
-    <%= link_to 'New Dish', new_dish_path %>
-  </div>
+<br>
 
-</div>
+<%= link_to 'New Dish', new_dish_path %>
