@@ -1,25 +1,3 @@
 // Place all the styles related to the Dishes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-.main-container {
-  display: relative;
-  height: 800px;
-  width: 90%;
-}
-
-.dish-items {
-    -webkit-column-count: 2; /* Chrome, Safari, Opera */
-    -moz-column-count: 2; /* Firefox */
-    column-count: 2;
-    column-gap: 100px;
-}
-
-.dish-items{
-  width: 60%;
-  height: auto;
-}
-
-.return-nav {
-  margin-top: 25px;
-}
