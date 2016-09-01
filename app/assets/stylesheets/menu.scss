@@ -1,0 +1,145 @@
+// Place all the styles related to the Menu controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.header-banner {
+  width: 95%;
+  height: 10%;
+  margin: auto;
+}
+
+.header-banner hr {
+  border: 0;
+  border-top: 3px double rgba(119,136,153,.8);
+  text-align: center;
+  width: 60%;
+}
+
+.header-banner hr:after {
+  content: '\03D2';
+  display: inline-block;
+  position: relative;
+  top: -15px;
+  padding: 3px 10px;
+  background: #fff;
+  color: rgba(119,136,153,.8);
+  font-size: 20px;
+}
+
+#menu-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 5.5em;
+  text-align: center;
+  padding-top: 2%;
+  color: #708090;
+}
+
+.main-container {
+  height: 800px;
+  width: 95%;
+  margin: auto;
+  display: block;
+  position: relative;
+}
+
+.menu-items {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+
+    -moz-column-fill: balance;
+    column-fill: balance;
+
+    -webkit-column-gap: 4%;
+    -moz-column-gap: 4%;
+    column-gap: 4%;
+
+    -webkit-column-width: 48%;
+    -moz-column-gap: 48%;
+    column-width: 48%;
+
+    -webkit-column-rule: 2px outset;
+    -moz-column-rule: 2px outset;
+    column-rule: 2px outset;
+
+    -webkit-column-rule-color: rgba(119,136,153,.8);
+    -moz-column-rule-color: rgba(119,136,153,.8);
+    column-rule-color: rgba(119,136,153,.8);
+}
+
+.menu-items {
+  margin: auto;
+  margin-top: 8%;
+  width: 85%;
+  height: auto;
+}
+
+
+.menu-items table {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 10%;
+}
+
+.menu-type {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.7em;
+  text-align: right;
+  color: #708090;
+}
+
+.menu-type h2 {
+  margin-top: -1px;
+  margin-bottom: -1px;
+  margin-right: -1.7em;
+}
+
+.category-name {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.6em;
+  color: #708090;
+  padding-right: 3%;
+  padding-bottom: .5%;
+  padding-top: 1.2em;
+  border-bottom: 1px solid;
+  border-color: rgba(119,136,153,.8);
+}
+
+
+.dish-row td {
+  font-family: 'Lato', sans-serif;
+  font-size: 17px;
+  color: rgba(119,136,153,.8);
+}
+
+.dish-row td a {
+  color: rgba(119,136,153,.8);
+}
+
+.dish-name {
+  padding: 1.4em 1.3em .5em 1.2em;
+}
+
+.dish-name a {
+  text-decoration: none;
+}
+
+.dish-price {
+  padding: 1.4em .7em .5em 0;
+  position: relative;
+}
+
+.dish-price #popup {
+  display: none;
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  padding: .1em .4em;
+  font-size: 10px;
+  z-index: 1;
+}
+
+.dish-price:hover #popup {
+  display: block;
+
+}
