@@ -2,7 +2,7 @@ class DishesController < ApplicationController
   before_action :set_dish, only: [:show, :edit, :update, :destroy]
 
   def index
-    @dishes = Dish.all
+    @dishes = Dish.ordered_by_category
   end
 
   def show
@@ -55,6 +55,6 @@ class DishesController < ApplicationController
     end
 
     def dish_params
-      params.require(:dish).permit(:name, :price)
+      params.require(:dish).permit(:name, :price, :category_id)
     end
 end
